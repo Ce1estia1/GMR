@@ -69,7 +69,13 @@ IK_CONFIG_DICT = {
     "fbx_offline":{
         "unitree_g1": IK_CONFIG_ROOT / "fbx_offline_to_g1.json",
     },
-    
+    "fbx_ED":{
+        "unitree_g1": IK_CONFIG_ROOT / "fbx_ED_to_g1.json",
+        "unitree_g1_with_hands": IK_CONFIG_ROOT / "fbx_to_g1_ED.json",
+    },
+    "fbx_offline_ue":{
+        "unitree_g1": IK_CONFIG_ROOT / "fbx_offline_to_g1_ue.json",
+    },
     "xrobot":{
         "unitree_g1": IK_CONFIG_ROOT / "xrobot_to_g1.json",
     },

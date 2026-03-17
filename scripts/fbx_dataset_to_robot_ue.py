@@ -10,10 +10,7 @@ import pickle
 from pathlib import Path
 
 def load_optitrack_fbx_motion_file(motion_file):
-    """
-    加载 OptiTrack FBX 动作文件并转换为 z-up 坐标系
-    motion_data 结构: [帧数] × [字典(60个键)] × (pos: [3], quat: [4])
-    """
+ 
     with open(motion_file, "rb") as f:
         motion_data = pickle.load(f)
 
@@ -186,7 +183,7 @@ if __name__ == "__main__":
 
     # 初始化重定向器（只初始化一次）
     retargeter = GMR(
-        src_human="fbx_offline",
+        src_human="fbx_offline_ue",
         tgt_robot=args.robot,
         actual_human_height=args.actual_human_height,
     )

@@ -143,7 +143,7 @@ if __name__ == "__main__":
     # 每个动作共用一个 retargeter 时只初始化一次；否则每段新建（与单文件脚本结果一致）
     if not args.reset_retargeter_per_motion:
         retargeter = GMR(
-            src_human="fbx",
+            src_human="fbx_ED",
             tgt_robot=args.robot,
             actual_human_height=1.6,
         )
