@@ -231,6 +231,14 @@ Each frame of **robot motion data** can be understood as a tuple of (robot_base_
 
 ## Usage
 
+### ForED
+#### 青瞳&小白人FBX
+
+环境配置：
+
+1. 正常配置GMR环境
+2. 另创一个新环境，用来运行将fbx转换成中间pkl的脚本。将third_party/fbx_dependency 中的所有python包放在新环境python解释器的package-site文件夹中即可，运行third_party/poselib/fbx_batch_importer.py或third_party/poselib/fbx_importer.py 脚本，直接pip install缺少的包即可。
+
 ### [NEW] PICO Streaming to Robot (TWIST2)
 
 Install PICO SDK:
